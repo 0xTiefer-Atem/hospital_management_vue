@@ -1,0 +1,20 @@
+病例组件一活跃就请求六个数据，六个看完就没了，排序好的
+请求地址: /home/case/treatmentQueueInfoListInit
+方法: post
+参数: staffId=value
+返回数据格式:    json    {}     
+treatmentQueueInfoList: [
+          {
+              registerId: '111123',
+              userId: '001',
+              userName: 'asd',
+              staffId: '123124',
+              staffName: 'asdasda'
+          }
+        ]
+
+
+提交病例
+请求地址: /home/case/insertCaseInfo
+方法: post
+参数: caseData={"registerId":"111123","userId":"001","userIllness":"qweqweqweqew","staffId":"123124","medicList":[{"medicId":5,"medicName":"白加黑","medicPrice":12,"medicNum":1},{"medicId":4,"medicName":"双黄连口服液","medicPrice":12,"medicNum":2}],"totalPrice":36}
