@@ -6,6 +6,7 @@ const Appointment = () => import('../components/appointment/Appointment');
 const Queue = () => import('../components/queue/Queue');
 const Case = () => import('../components/case/Case');
 const Staff = () => import('../components/staff/Staff');
+const FeedBack = () => import('../components/feedBack/FeedBack');
 
 Vue.use(VueRouter);
 
@@ -42,6 +43,10 @@ const routes = [
       {
         path: 'case',
         component: Case
+      },
+      {
+        path: 'feedBack',
+        component: FeedBack
       },
       {
         path: 'staff',

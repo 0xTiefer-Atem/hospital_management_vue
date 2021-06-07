@@ -1,10 +1,10 @@
 <template>
   <el-container class="home-container">
 <!--    头部区域-->
-    <el-header>
-      <div>
-        <img class="logo-img" src="../assets/logo.png" alt="">
-        <span class="system_title">医生后台管理系统</span>
+    <el-header height="100px">
+      <div >
+        <img class="logo-img" src="../assets/logo_1.jpg" alt="">
+        <span class="system_title">医路有你-后台管理系统</span>
       </div>
       <el-button type="info" @click="logOut">退出</el-button>
       </el-header>
@@ -67,6 +67,11 @@
             menuName: '病例录入',
             menuPath: '/case',
             menuIcon: 'el-icon-s-order'
+          },
+          {
+            menuName: '诊断反馈',
+            menuPath: '/feedBack',
+            menuIcon: 'el-icon-s-claim'
           },
           {
             menuName: '职工管理',
@@ -142,8 +147,10 @@
   }
 
   .logo-img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-left: 10px;
   }
 
   .toggle-button{
